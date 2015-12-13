@@ -66,7 +66,7 @@ status_t Mount(const std::string& source, const std::string& target, bool ro,
 
     sprintf(mountData,
 #ifdef CONFIG_KERNEL_HAVE_NTFS
-            "utf8,uid=%d,gid=%d,fmask=%o,dmask=%o,nodev,nosuid",
+            "uid=%d,gid=%d,fmask=%o,dmask=%o,nodev,nosuid",
 #else
             "utf8,uid=%d,gid=%d,fmask=%o,dmask=%o,"
             "shortname=mixed,nodev,nosuid,dirsync",
